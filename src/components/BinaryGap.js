@@ -1,5 +1,3 @@
-import "./BinaryGap.css";
-
 const BinaryGap = (props) => {
   const binaryString = props.number.toString(2);
   let tempCounter = 0;
@@ -17,14 +15,9 @@ const BinaryGap = (props) => {
     }
   }
 
-  return (
-    <>
-      <h3>Your Binary Conversion Is</h3>
-      <h4>{binaryString}</h4>
-      <h3>Which Has a Binary Gap of</h3>
-      <h4>{zeroCounter}</h4>
-    </>
-  );
+  props.onInput(binaryString, zeroCounter)
+
+  return null
 };
 
 export default BinaryGap;

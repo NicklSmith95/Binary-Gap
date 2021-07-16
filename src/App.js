@@ -1,13 +1,11 @@
 import BGInput from "./components/BGInput";
-
-import "./App.css";
+import { Main } from './components/UI/Style'
 
 function App() {
   return (
-    <body>
-      <h1>Binary Gap</h1>
+    <Main>
       <BGInput />
-    </body>
+    </Main>
   );
 }
 
